@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-wood-shelf: #8b5a2b;
+  --color-wood-grain: #5c3a21;
+}
+
+/* Custom scrollbar styling for virtual shelf and matrix logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 90, 43, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 90, 43, 0.6);
+}
+
+/* Animations and transitions helpers */
+.bookshelf-gradient {
+  background: linear-gradient(to bottom, #d2a172, #8b5a2b);
+}
+
+.bookshelf-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.15);
+}
+
+/* Simulated book dimensional perspectives */
+.book-spine-3d {
+  transform: perspective(400px) rotateY(-15deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-spine-3d:hover {
+  transform: perspective(400px) rotateY(0deg) scale(1.05) translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
