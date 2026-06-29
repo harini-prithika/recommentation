@@ -1,0 +1,8 @@
+{
+  "name": "The Celestial Book Haven",
+  "description": "An interactive, full-stack Book Recommendation System showcasing Collaborative Filtering, beautiful floating background book animations, a secure login pin gate, multi-language support, and AI-powered mood recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
